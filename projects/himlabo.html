@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейс: Редизайн ФизЛабо — Дмитрий Привалихин</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+            background: #0f0f10; color: #eaeaea; line-height: 1.6; padding: 60px 20px;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        .back-link { color: #6b9eff; text-decoration: none; font-size: 14px; display: inline-block; margin-bottom: 40px; }
+        .back-link:hover { text-decoration: underline; }
+        
+        .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+        .tag { background: #1c1c20; border: 1px solid #2a2a30; padding: 6px 12px; border-radius: 100px; font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+        
+        h1 { font-size: 42px; font-weight: 700; color: #fff; margin-bottom: 16px; line-height: 1.2; }
+        .subtitle { font-size: 18px; color: #888; margin-bottom: 32px; }
+        
+        .hero-buttons { display: flex; gap: 16px; margin-bottom: 48px; flex-wrap: wrap; }
+        .btn-primary { background: #1A5FB4; color: #fff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; transition: 0.2s; display: inline-block; border: none; cursor: pointer; }
+        .btn-primary:hover { background: #154a8c; }
+        .btn-secondary { background: transparent; color: #eaeaea; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; border: 1px solid #3a3a44; transition: 0.2s; display: inline-block; cursor: pointer; }
+        .btn-secondary:hover { border-color: #6b9eff; color: #6b9eff; }
+        
+        .preview-img { width: 100%; border-radius: 16px; border: 1px solid #25252a; margin-bottom: 60px; display: block; object-fit: cover; max-height: 500px; background: #17171a; }
+        
+        h2 { font-size: 28px; font-weight: 600; color: #fff; margin-top: 48px; margin-bottom: 24px; }
+        p { font-size: 16px; color: #b5b5b5; margin-bottom: 16px; }
+        ul { padding-left: 24px; margin-bottom: 24px; }
+        li { font-size: 16px; color: #b5b5b5; margin-bottom: 12px; }
+        strong { color: #eaeaea; }
+        
+        .highlight { background: #17171a; border-left: 4px solid #1A5FB4; padding: 24px; border-radius: 0 8px 8px 0; margin: 32px 0; }
+        .highlight p { margin-bottom: 0; color: #eaeaea; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Назад в портфолио</a>
+        
+        <div class="tags">
+            <span class="tag">UI/UX Дизайн</span>
+            <span class="tag">Figma</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">E-commerce</span>
+        </div>
+
+        <h1>ФизЛабо: Редизайн сайта производителя</h1>
+        <p class="subtitle">Полный цикл: от проектирования в Figma до сборки интерактивного прототипа. Фокус на B2B-продажи и удобство для школ.</p>
+        
+        <div class="hero-buttons">
+            <!-- ЖИВАЯ ССЫЛКА НА САЙТ -->
+            <a href="https://bbak4vk98uqgebvbluaj.containers.yandexcloud.net/" target="_blank" class="btn-primary">Посмотреть живой сайт ↗</a>
+            <a href="#case-content" class="btn-secondary">Читать кейс ↓</a>
+        </div>
+
+        <!-- КАРТИНКА-ПРЕВЬЮ (заменим позже) -->
+        <img src="../new-main.jpg.png" alt="Превью нового сайта ФизЛабо" class="preview-img" onerror="this.style.display='none'">
+
+        <div id="case-content">
+            <h2>Контекст и задача</h2>
+            <p>Я провёл аудит сайтов производителей школьного оборудования и заметил общую проблему: устаревший дизайн, перегруженный каталог и отсутствие онлайн-инструментов для быстрой закупки.</p>
+            <p>Я разработал концепт современного e-commerce сайта для бренда «ФизЛабо», чтобы показать, как грамотный UX/UI может <strong>напрямую увеличить количество заявок от школ</strong>.</p>
+
+            <h2>Проблема оригинального сайта</h2>
+            <ul>
+                <li><strong>Сложный поиск:</strong> Учителя тратят много времени, чтобы найти набор для конкретного класса или ОГЭ.</li>
+                <li><strong>Низкое доверие:</strong> Устаревший дизайн вызывал ассоциации с перекупщиками, а не с надежным заводом.</li>
+                <li><strong>Нет лид-магнитов:</strong> Пользователь не мог оставить заявку онлайн, приходилось звонить.</li>
+            </ul>
+
+            <h2>Что я изменил, чтобы сайт лучше продавал</h2>
+            <ul>
+                <li><strong>Сфокусировал первый экран на доверии.</strong> Вынес главный оффер — <em>«Напрямую от производителя»</em> — на первый план. Для B2B это ключевой триггер.</li>
+                <li><strong>Внедрил четкую категоризацию.</strong> Каталог разбит на понятные направления: Физика, Химия, Биология. Учитель находит нужное за 1 клик.</li>
+                <li><strong>Добавил кнопку «Запросить КП».</strong> В школах редко покупают в один клик, им нужен счет. Кнопка есть на карточках товаров и внизу страницы.</li>
+                <li><strong>Сделал блок «Хиты продаж».</strong> Социальное доказательство — клиенты видят, что чаще всего берут другие школы.</li>
+                <li><strong>Упростил путь до заявки.</strong> Блок «Как заказать» (4 шага) и форма запроса КП.</li>
+            </ul>
+
+            <h2>Ожидаемый результат</h2>
+            <div class="highlight">
+                <p>• Снижение нагрузки на менеджеров (клиенты сами формируют запросы).<br>
+                • Рост конверсии в заявку за счет понятной структуры.<br>
+                • Улучшение имиджа: производитель выглядит современно и технологично.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
