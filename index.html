@@ -3,141 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кейс: Редизайн сайта производителя учебного оборудования</title>
+    <title>Дмитрий Привалихин — Дизайнер</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
-            background: #0f0f10;
-            color: #eaeaea;
-            line-height: 1.6;
-            padding: 60px 20px;
+            background: #0f0f10; color: #eaeaea; min-height: 100vh;
+            padding: 80px 24px; display: flex; flex-direction: column; align-items: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .back-link {
-            color: #6b9eff;
-            text-decoration: none;
-            font-size: 14px;
-            display: inline-block;
-            margin-bottom: 40px;
-        }
-        .back-link:hover { text-decoration: underline; }
+        .container { max-width: 900px; width: 100%; }
         h1 {
-            font-size: 42px;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 16px;
-            line-height: 1.2;
+            font-size: 56px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.1;
         }
-        .subtitle {
-            font-size: 18px;
-            color: #888;
-            margin-bottom: 48px;
+        .role { font-size: 20px; color: #888; margin-bottom: 32px; }
+        .contacts { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 80px; }
+        .contacts a { color: #6b9eff; text-decoration: none; font-size: 15px; border-bottom: 1px solid transparent; transition: 0.2s; }
+        .contacts a:hover { border-bottom-color: #6b9eff; }
+        h2 { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: #666; margin-bottom: 24px; }
+        
+        .project-card {
+            display: block; padding: 32px; background: #17171a; border: 1px solid #25252a;
+            border-radius: 20px; text-decoration: none; color: inherit; transition: all 0.25s ease;
         }
-        .meta {
-            display: flex;
-            gap: 40px;
-            margin-bottom: 60px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #25252a;
-        }
-        .meta-item { display: flex; flex-direction: column; gap: 6px; }
-        .meta-label { font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 0.08em; }
-        .meta-value { font-size: 16px; color: #fff; font-weight: 500; }
-        h2 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #fff;
-            margin-top: 48px;
-            margin-bottom: 24px;
-        }
-        p { font-size: 16px; color: #b5b5b5; margin-bottom: 16px; }
-        ul { padding-left: 24px; margin-bottom: 24px; }
-        li { font-size: 16px; color: #b5b5b5; margin-bottom: 12px; }
-        strong { color: #eaeaea; }
-        .highlight {
-            background: #17171a;
-            border-left: 4px solid #1A5FB4;
-            padding: 24px;
-            border-radius: 0 8px 8px 0;
-            margin: 32px 0;
-        }
-        .highlight p { margin-bottom: 0; color: #eaeaea; font-weight: 500; }
-        .image-placeholder {
-            width: 100%;
-            height: 400px;
-            background: #17171a;
-            border: 2px dashed #2a2a30;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #555;
-            margin: 32px 0;
-            font-size: 16px;
-        }
+        .project-card:hover { border-color: #3a3a44; transform: translateY(-3px); background: #1c1c20; }
+        .project-title { font-size: 26px; font-weight: 600; color: #fff; margin-bottom: 16px; display: block; }
+        .project-desc { font-size: 15px; color: #888; line-height: 1.6; margin-bottom: 24px; }
+        .btn-link { font-size: 15px; color: #1A5FB4; font-weight: 600; }
+        footer { margin-top: 80px; font-size: 13px; color: #555; text-align: center; }
+        @media (max-width: 600px) { h1 { font-size: 38px; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="#" class="back-link">← Назад к портфолио</a>
-        
-        <h1>Концепт-редизайн интернет-магазина учебного оборудования</h1>
-        <p class="subtitle">Как UX/UI дизайн помогает увеличить количество заявок от школ (B2B).</p>
-
-        <div class="meta">
-            <div class="meta-item">
-                <span class="meta-label">Роль</span>
-                <span class="meta-value">UX/UI Дизайнер</span>
+        <header>
+            <h1>Дмитрий Привалихин</h1>
+            <p class="role">UX/UI Дизайнер · HTML/CSS</p>
+            <div class="contacts">
+                <a href="https://github.com/dmitrijprivalihin701-eng" target="_blank">GitHub</a>
+                <a href="mailto:email@example.com">Email</a>
+                <a href="https://t.me/username" target="_blank">Telegram</a>
             </div>
-            <div class="meta-item">
-                <span class="meta-label">Тип проекта</span>
-                <span class="meta-value">Pet-project / Концепт</span>
-            </div>
-            <div class="meta-item">
-                <span class="meta-label">Инструменты</span>
-                <span class="meta-value">Figma, HTML/CSS</span>
-            </div>
-        </div>
+        </header>
 
-        <h2>🎯 Контекст и задача</h2>
-        <p>Я провёл аудит сайтов производителей школьного оборудования и заметил общую проблему: устаревший дизайн, перегруженный каталог и полное отсутствие онлайн-инструментов для быстрой закупки.</p>
-        <p>Я разработал концепт современного e-commerce сайта для вымышленного бренда «ФизЛабо» (на основе реальной проблематики рынка), чтобы показать, как грамотный UX/UI может <strong>напрямую увеличить количество заявок от школ</strong>.</p>
+        <section>
+            <h2>Избранные проекты</h2>
+            <a class="project-card" href="projects/himlabo.html">
+                <span class="project-title">Редизайн интернет-магазина учебного оборудования</span>
+                <p class="project-desc">Концепт-редизайн для производителя «ФизЛабо». Улучшение UX/UI, внедрение B2B-механик (запрос КП) и адаптивная верстка.</p>
+                <span class="btn-link">Смотреть кейс →</span>
+            </a>
+        </section>
 
-        <h2>🔍 Проблема оригинального сайта (что мешало продавать)</h2>
-        <ul>
-            <li><strong>Сложный поиск:</strong> Учителя тратят много времени, чтобы найти набор для конкретного класса или ОГЭ.</li>
-            <li><strong>Низкое доверие:</strong> Устаревший дизайн вызывал ассоциации с перекупщиками, а не с надежным заводом-производителем.</li>
-            <li><strong>Нет лид-магнитов:</strong> Пользователь не мог оставить заявку онлайн, приходилось звонить (высокий порог входа).</li>
-        </ul>
-
-        <div class="image-placeholder">
-            [ Скриншот "До" — старый сайт ]
-        </div>
-
-        <h2>🚀 Что я изменил, чтобы сайт лучше продавал</h2>
-        <ul>
-            <li><strong>Сфокусировал первый экран (Hero) на доверии.</strong> Вынес главный оффер — <em>«Учебное оборудование для школ напрямую от производителя»</em> — на первый план. Для B2B-сегмента это ключевой триггер: покупать у завода выгоднее.</li>
-            <li><strong>Внедрил четкую категоризацию.</strong> Вместо свалки товаров каталог разбит на понятные направления: Физика, Химия, Биология. Теперь учитель находит нужный раздел за один клик.</li>
-            <li><strong>Добавил кнопку «Запросить КП».</strong> Это главный CTA для B2B. В школах редко покупают в один клик, им нужен счет. Кнопка есть на карточках товаров и внизу страницы.</li>
-            <li><strong>Сделал блок «Хиты продаж».</strong> Это социальное доказательство и удобная навигация — клиенты видят, что чаще всего берут другие школы.</li>
-            <li><strong>Упростил путь до заявки.</strong> Внедрил блок «Как заказать» (4 понятных шага) и форму запроса КП, чтобы уловить тех, кто долистал до конца.</li>
-        </ul>
-
-        <div class="image-placeholder">
-            [ Скриншот "После" — Новый дизайн главной, Каталога, Карточки ]
-        </div>
-
-        <h2>📈 Ожидаемый результат (Бизнес-ценность)</h2>
-        <div class="highlight">
-            <p>• Снижение нагрузки на менеджеров (клиенты сами формируют запросы).<br>
-            • Рост конверсии в заявку за счет понятной структуры и доверия.<br>
-            • Улучшение имиджа: производитель выглядит современно и технологично.</p>
-        </div>
-
+        <footer>© 2026 Дмитрий Привалихин</footer>
     </div>
 </body>
 </html>
